@@ -47,7 +47,9 @@ print('Drawing map...')
 cs = m.contourf(lon_grid, lat_grid, z, levels=[-0.5, 0.5,1.5], cmap="jet", latlon=True)
 plt.show()
 
-
+plt.savefig('example_plot_globe_map_us.png',
+            bbox_inches='tight',
+            dpi=400)
 
 
 # # Compare to basemap is_land (this takes a very long time).
