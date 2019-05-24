@@ -14,6 +14,7 @@ This package provides globe.is_land(), an alaternative to Basemap.is_land(). For
 
 # Simple example
 
+Here is a simple example showing the use of global_land_mask to check if lat/lon points are on land.
 ```python
 from global_land_mask import globe
 import numpy as np
@@ -130,6 +131,6 @@ plt.savefig('example_plot_globe_map_us.png',
 
 to create the binary mask for the US, shown in the image below:
 
-![Map of Land Mask](https://github.com/toddkarin/global-land-mask/blob/master/example_plot_globe_map_us.png "Map of Land Mask")
+![Map of Land Mask](https://github.com/toddkarin/global-land-mask/blob/master/global_land_mask/example_plot_globe_map_us.png "Map of Land Mask")
 
 Note that lakes are included as "on land" and the resolution isn't perfect, but it's good enough for many purposes!
