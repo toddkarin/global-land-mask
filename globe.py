@@ -12,10 +12,16 @@ savez_compressed, making for a very compact package.
 """
 
 import numpy as np
+import os
+
 
 
 # Load the data from file.
-_mask_filename = 'globe_combined_mask_compressed.npz'
+full_path = os.path.realpath(__file__)
+_path, _ = os.path.split(full_path)
+
+
+_mask_filename = os.path.join(_path,'globe_combined_mask_compressed.npz')
 
 _mask_fid = np.load(_mask_filename)
 
