@@ -12,6 +12,16 @@ It is not necessary to download this data in order to use the global land mask. 
 
 This package provides globe.is_land(), an alaternative to Basemap.is_land(). For 10,000 data points, globe.is_land is around 6000 times faster than Basemap.is_land.
 
+# Install
+
+Install using pip:
+```bash
+pip install global-land-mask
+```
+
+Requirements:
+- numpy  
+
 # Simple example
 
 Here is a simple example showing the use of global_land_mask to check if lat/lon points are on land.
