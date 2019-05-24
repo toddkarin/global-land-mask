@@ -1,4 +1,5 @@
-![Map of Land Mask](https://github.com/toddkarin/global-land-mask/blob/master/global_land_mask/example_plot_globe_map_us.png "Map of Land Mask") <!-- .element style="width:50%" -->
+<img src="https://github.com/toddkarin/global-land-mask/blob/master/global_land_mask/example_plot_globe_map_us.png" width="200">
+
 
 # global-land-mask
 Check whether a lat/lon point is on land for any point on earth.
