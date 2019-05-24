@@ -1,7 +1,7 @@
 # global-land-mask
 Check whether a lat/lon point is on land for any point on earth.
 
-<img src="https://github.com/toddkarin/global-land-mask/blob/master/global_land_mask/example_plot_globe_map_us.png" width="200">
+<img src="https://github.com/toddkarin/global-land-mask/blob/master/example_plot_globe_map_us.png" width="200">
 
 # Install
 
@@ -147,6 +147,6 @@ plt.savefig('example_plot_globe_map_us.png',
 
 to create the binary mask for the US, shown in the image below:
 
-![Map of Land Mask](https://github.com/toddkarin/global-land-mask/blob/master/global_land_mask/example_plot_globe_map_us.png "Map of Land Mask")
+![Map of Land Mask](https://github.com/toddkarin/global-land-mask/blob/master/example_plot_globe_map_us.png "Map of Land Mask")
 
 Note that lakes are included as "on land" and the resolution isn't perfect, but it's good enough for many purposes!
