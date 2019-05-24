@@ -1,8 +1,17 @@
-<img src="https://github.com/toddkarin/global-land-mask/blob/master/global_land_mask/example_plot_globe_map_us.png" width="200">
-
-
 # global-land-mask
 Check whether a lat/lon point is on land for any point on earth.
+
+<img src="https://github.com/toddkarin/global-land-mask/blob/master/global_land_mask/example_plot_globe_map_us.png" width="200">
+
+# Install
+
+Install using pip:
+```bash
+pip install global-land-mask
+```
+
+Requirements:
+- numpy  
 
 # Description
 This python module, global-land-mask, contains scripts for checking whether a lat/lon point is on land or sea. In order to do this, we use the GLOBE dataset, which samples the entire earth at 1 km resolution. We then simply extract all 'invalid' values from this elevation map and save to file.
@@ -15,15 +24,9 @@ It is not necessary to download this data in order to use the global land mask. 
 
 This package provides globe.is_land(), an alaternative to Basemap.is_land(). For 10,000 data points, globe.is_land is around 6000 times faster than Basemap.is_land.
 
-# Install
+The function globe.is_land uses a nearest-neighbor lookup on a regular grid.  
 
-Install using pip:
-```bash
-pip install global-land-mask
-```
 
-Requirements:
-- numpy  
 
 # Simple example
 
