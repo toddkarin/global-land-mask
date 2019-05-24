@@ -21,3 +21,5 @@ example_plot_globe_map.py
 to create the binary mask for the US, shown in the image below:
 
 ![Map of Land Mask](https://github.com/toddkarin/global-land-mask/blob/master/example_plot_globe_map_us.png "Map of Land Mask")
+
+Note that lakes are included as "on land" and the resolution isn't perfect, but it's good enough for many purposes!
