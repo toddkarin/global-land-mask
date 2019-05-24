@@ -48,9 +48,10 @@ m.drawcountries(linewidth=0.2)
 print('Drawing map...')
 cs = m.contourf(lon_grid, lat_grid, z, levels=[-0.5, 0.5,1.5], cmap="jet", latlon=True)
 
-# m,cs = make_gridded_map(x,y,z,fig_number=1)
-cbar = m.colorbar(cs,location='bottom',pad="5%")
+# cbar = m.colorbar(cs,location='bottom',pad="5%")
 
 
 plt.show()
-
+plt.savefig('example_plot_globe_map_us.png',
+            bbox_inches='tight',
+            dpi=400)
