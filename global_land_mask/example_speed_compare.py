@@ -4,12 +4,10 @@ Compare the evaluation speed of globe.is_land and Basemap.is_land()
 
 """
 
-import globe
+from global_land_mask import globe
 from mpl_toolkits.basemap import Basemap
-import numpy as np
 import matplotlib
 matplotlib.use('TkAgg')
-import matplotlib.pyplot as plt
 import numpy as np
 import time
 
