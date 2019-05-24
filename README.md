@@ -8,9 +8,9 @@ The global mask is of shape (21600, 43200), equating to about 980 mB when saved 
 
 The raw elevation data from the GLOBE dataset can be downloaded from 
 https://www.ngdc.noaa.gov/mgg/topo/gltiles.html
-It is not necessary to download this data in order to use the global land mask. However, by downloading one can build a global elevation dataset.
+It is not necessary to download this data in order to use the global land mask. However, by downloading one can build a global elevation dataset using the functions provided.
 
-This function is an alaternative to Basemap.is_land(). This function is much much faster. For 10,000 data points, globe.is_land is around 6000 times faster than Basemap.is_land.
+This package provides globe.is_land(), an alaternative to Basemap.is_land(). For 10,000 data points, globe.is_land is around 6000 times faster than Basemap.is_land.
 
 # Example
 
