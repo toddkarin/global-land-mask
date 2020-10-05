@@ -28,9 +28,9 @@ This package provides globe.is_land(), an alaternative to Basemap.is_land(). For
 
 The function globe.is_land uses a nearest-neighbor lookup on a regular grid.  
 
-# Cite
+# How to cite this work
 
-To cite this package:
+To cite this work, please use this citation:
 
 Karin, Todd. Global Land Mask. October 5, 2020. https://doi.org/10.5281/zenodo.4066722
 
