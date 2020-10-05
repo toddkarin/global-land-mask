@@ -4,7 +4,7 @@ global-land-mask is a python module for checking whether a lat/lon point is
 on land or on sea. In order to do this, we use the globe dataset,
 which samples the entire earth at 1 km resolution.
 
-The global mask is of shape (21600, 43200), equating to about 980 mB when
+The global mask is of shape (21600, 43200), coming to about 980 mB when
 saved without compression. This data can be compressed to 2.5 mb using numpy
 savez_compressed, making for a very compact package.
 
@@ -102,12 +102,19 @@ def is_ocean(lat,lon):
 
     Parameters
     ----------
-    lat
-    lon
+    lat : ndarray or float
+
+        latitude in degrees
+
+    lon : ndarray or float
+
+        longitude in degrees
 
     Returns
     -------
+    is_ocean_mask : ndarray or float
 
+        boolean array denoting whether the corresponding point is in the ocean.
     """
     lat_i = lat_to_index(lat)
     lon_i = lon_to_index(lon)
@@ -123,11 +130,19 @@ def is_land(lat,lon):
 
     Parameters
     ----------
-    lat
-    lon
+    lat : ndarray or float
+
+        latitude in degrees
+
+    lon : ndarray or float
+
+        longitude in degrees
 
     Returns
     -------
+    is_land_mask : ndarray or float
+
+        boolean array denoting whether the corresponding point is on land.
 
     """
     lat_i = lat_to_index(lat)
