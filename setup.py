@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="global-land-mask",
-    version="0.0.3",
+    version="1.0.0",
     author="toddkarin",
     author_email="pvtools.lbl@gmail.com",
     description="Check whether a lat/lon point in on land or on sea",
