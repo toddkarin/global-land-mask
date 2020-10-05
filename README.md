@@ -11,7 +11,7 @@ pip install global-land-mask
 ```
 
 Requirements:
-- numpy  
+- numpy
 
 # Description
 This python module, global-land-mask, contains scripts for checking whether a lat/lon point is on land or sea. In order to do this, we use the GLOBE dataset, which samples the entire earth at 1 km resolution. We then simply extract all 'invalid' values from this elevation map and save to file.
@@ -20,7 +20,7 @@ The global mask is of shape (21600, 43200), equating to about 980 mB when saved 
 
 The raw elevation data from the GLOBE dataset can be downloaded from 
 https://www.ngdc.noaa.gov/mgg/topo/gltiles.html
-It is not necessary to download this data in order to use the global land mask. However, by downloading one can build a global elevation dataset using the functions provided.
+It is not necessary to download this data in order to use the global land mask. However, the user can build a global elevation dataset using the exampel scripts provided.
 
 This package provides globe.is_land(), an alaternative to Basemap.is_land(). For 10,000 data points, globe.is_land is around 6000 times faster than Basemap.is_land.
 
