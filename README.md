@@ -1,4 +1,6 @@
 # global-land-mask
+[![DOI](https://zenodo.org/badge/188448081.svg)](https://zenodo.org/badge/latestdoi/188448081)
+
 Check whether a lat/lon point is on land for any point on earth.
 
 <img src="https://github.com/toddkarin/global-land-mask/blob/master/example_plot_globe_map_us.png" width="200">
